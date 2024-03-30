@@ -17,9 +17,11 @@ See Clean_2015_Pitching_Data.csv
 ## Exploratory Data Analysis
 **Step 1** - Import the Data  
 **Step 2** - Basic Understand of the Data (Head, Tail, Shape)  
-**Step 3** - Clean the Data Part 1 - Remove String Values and Unnecessary Target Features  
+**Step 3** - Clean the Data Part 1  
+             Remove String Values and Unnecessary Target Features  
 **Step 4** - Correlation Analysis  
-**Step 5** - Clean the Data Part 2 - Create new dataframe that only includes features that correlate with my target_feature with a magnitude of 0.5 or higher  
+**Step 5** - Clean the Data Part 2  
+             Create new dataframe that only includes features that correlate with my target_feature with a magnitude of 0.5 or higher  
 **Step 6** - Basic Descriptive Statistics with new dataframe  
 **Step 7** - Correlation Heat Chart with Target Feature  
 **Step 8** - Scatter Plots with all remaining Features vs Target Feature  
