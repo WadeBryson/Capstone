@@ -1,7 +1,7 @@
 # The K Zone: A Machine Learning Approach to Predicting Pitcher Strikeouts
 
 ## Project Overview
-The goal of this project is to utilize Machine Learning to predict the season long strikout total for a Major League Baseball pitcher using basic and advanced statistics from the Baseball Savant website. 
+The goal of this project is to utilize Machine Learning to predict the season long strikeout total for a Major League Baseball pitcher using basic and advanced statistics from the Baseball Savant website. 
 
 ## Motivation and Background
 The idea for this project originated when I was trying to utilize Machine Learning to give myself an advantage when creating season long projections for my Yahoo Fantasy Baseball League. Originally I tried to predict a pitcher's Yahoo Fantasy Baseball Points but I had very little success. I decided to take an indepentent look at each variable that is used to calcuate their final fantasy score. Strikeouts are a key part of the Yahoo Fantasy Baseball Pitcher Points equation.
