@@ -3,3 +3,4 @@ numpy
 seaborn
 ipykernel
 matplotlib.pyplot
+scikit-learn
