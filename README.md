@@ -102,7 +102,10 @@ Model Performance
 ## File Descriptions
 **Raw_Data.csv** - Raw Pitching Data from 2015 - 2023 (No data for 2020 due to shortened COVID season).    
 **Clean_2015_Pitching_Data.csv** - Pitcing Data containing prior year stats and new year taret features.  
-**Exploratory Data Analysis.ipynb** - Jupyter Notebook that imports and cleans the data and then uses correlation analysis to select and analyze wanted features.  
+**Exploratory Data Analysis.ipynb** - Jupyter Notebook that imports and cleans the data and then uses correlation analysis to select and analyze wanted features. 
+**Simple Regression Models.ipynb** - Jupyter Notebook that builds and analyzes Model 1 - Single Feature and Model 2 - Multi Feature.  
+**LASSO and Decision Tree Models.ipynb** - Jupyter Notebook that builds and analyzes Model 3 - Decision Tree with Full Features, Model 4 - Decision Tree with EDA Features, Model 5 - LASSO with Full Features, and Model 6 - LASSO with EDA Features.  
+**Final Results.ipynb** - Jupyter Notebook that displays the best iteration of each of the six models.  
 
 ## How to Manage Virtual Environment
 **Step 1** - In VS Code open the Command Palette.  
