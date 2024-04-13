@@ -113,10 +113,13 @@ Model Performance
 | 10    | 1362 | .4432 |
 | 100   | 1556 | .3635 |
 
-## Results and Key Findings
+## Results
 
 
-## Conclusion and Future Work
+
+## Key Findings
+
+## Future Work
 
 ## Project Requirements
 
