@@ -64,7 +64,7 @@ Model Performance
 | 4 | k_percent, strikeout, xba, whiff_percent | 0.45 | 0.34 |
 | 5 | k_percent, strikeout, xba, whiff_percent, p_swinging_strike | 0.45 | 0.34 |
 ### **Model 3** - Decision Tree Model with Full Features
-
+<img width = "463" height = "327" src="Decision Tree Full Model.png">  
 
 Model Performance
 | Depth | MSE   | R2    |
