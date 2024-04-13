@@ -175,12 +175,21 @@ Once again the features and their coefficients can be a little misleading so I c
 | ab | -0.0013 | 639.4 | -0.8 |
 | pitch_count_offspeed | 0.0002 | 366.2 | 0.1 | 
 
+These features and their weight seem drastically different than everything else that I used. p_total_strike, fastball_avg_spin, total_pitches all show up heavily in this model but they did not show up in any of my other models. A big reason for this was because they were not on the original correlation analysis done in the EDA. p_total_ball and p_ball are very similar features and they show up as the 5th and 6th heaviest features but they have opposite coefficients so they kind of cancel each other out so their impact on this model is not a big as it originally looked. The big surprise here is that the feature strikeout is high on the list and k_percent was not used in this model.  
 
+## Conclusion  
+The goal of this project was to utilize Machine Learning to predict the season long strikeout total for a Major League Baseball pitcher using basic and advanced statistics from the Baseball Savant website. The best model that I was able to create was a LASSO Model that utilized my full data set and focused on features like a pitcher's total strikes, strikeouts, fastball average spin rate, and total pitches. I created several models that performed very similar and in almost every model the most important feature was strikeout percentage.
 
 ## Future Work
+Instead of trying to predict the exact number of strikeouts I think someone could have more success creating a tier system and trying to predict which tier a pitcher will end up in. For example you could potentially break the tiers into the following: Tier 1 - 200+ Strikeouts, Tier 2 - 150-199 Strikeouts, Tier 3 - 100-149 Strikeouts, Tier 4 - 0-99 Strikeouts. I wanted to create this pitcher strikeout model to have a leg up in Fantasy Baseball and for that purpose I am more concerned about getting pitchers with 200+ strikeout potential than I am predicting their exact strikeout number. A tier system might help allow for more error and therefore get a better predictive model.
 
 ## Project Requirements
-
+pandas
+numpy
+seaborn
+ipykernel
+matplotlib.pyplot
+scikit-learn
 
 ## File Descriptions
 **Raw_Data.csv** - Raw Pitching Data from 2015 - 2023 (No data for 2020 due to shortened COVID season).    
