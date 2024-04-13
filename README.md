@@ -114,7 +114,7 @@ Model Performance
 | 100   | 1556 | .3635 |
 
 ## Results
-<img width = "404" height = "443" src="Final Results Table.png"> 
+<img width = "404" height = "243" src="Final Results Table.png"> 
 
 
 ## Key Findings
