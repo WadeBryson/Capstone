@@ -114,6 +114,7 @@ Model Performance
 | 100   | 1556 | .3635 |
 
 ## Results
+The LASSO Model with Full Features performed the best of all of the models. It had an r2 value of 0.49 which almost doubles the accuracy of the baseline model r2 of 0.26. 
 <img width = "404" height = "243" src="Final Results Table.png"> 
 
 
