@@ -145,6 +145,36 @@ At face value it looks like k_percent is once again pretty important but the rea
 **LASSO Full Features Model** - This model was the best model that I created with an r2 value of 0.49.   
 <img width = "333" height = "416" src="LASSO Full Features.png">  
 
+Once again the features and their coefficients can be a little misleading so I created a table below with the coefficient for each feature, the mean for each feature, and then a product of the two values so you can see a snapshot of the average impact of each feature on the data.  
+
+| Feature | Coefficient | Mean | Product |
+| ------- | ----------- | ---- | ------- |
+| p_total_strike | -0.1111 | 1757.68 | -195.1 | 
+| strikeout | 0.9183 | 160.2 | 147.1 |
+| fastball_avg_spin | 0.0652 | 2222.82 | 144.9 |
+| total_pitches | 0.04 | 2711.33 | 108.5 |
+| p_total_ball | -0.1030 | 962.42 | -99.1 |
+| p_ball | 0.1061 | 894.9 | 95.0 |
+| pa | -0.1203 | 703.45 | -84.63 |
+| in_zone | 0.0499 | 1330.5 | 66.4 |
+| out_zone | -0.0254 | 1385.15 | -35.2 |
+| p_lob | 0.2969 | 116.67 | 34.6 |
+| player_age | -0.8347 | 28.56 | -23.8 |
+| p_total_bases | -0.0764 | 253.88 | -19.4 |
+| out_zone_swing | 0.0468 | 405.3 | 19.0 |
+| offspeed_avg_spin | -0.0096 | 1723.9 | -16.5 |
+| last_year_Yahoo | -0.0483 | 328.28 | -15.9 |
+| p_total_swinging_strike | 0.0122 | 760.99 | 9.3 |
+| double | 0.2483 | 30.81 | 7.7 |
+| pitch_count_fastball | 0.0047 | 1621.4 | 7.6 |
+| p_swinging_strikes | -0.0256 | 268.04 | -6.9 |
+| p_called_strike | -0.0096 | 464.1 | -4.5 |
+| pitch_count_breaking | 0.0056 | 693.5 | 3.9 |
+| breaking_avg_spin | 0.0013 | 2384.4 | 3.1 |
+| edge | 0.0014 | 1174 | 1.6 |
+| ab | -0.0013 | 639.4 | -0.8 |
+| pitch_count_offspeed | 0.0002 | 366.2 | 0.1 | 
+
 
 
 ## Future Work
