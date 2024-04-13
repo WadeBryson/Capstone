@@ -113,12 +113,35 @@ Model Performance
 | 10    | 1362 | .4432 |
 | 100   | 1556 | .3635 |
 
-## Results
+## Compiled Model Performances
 The LASSO Model with Full Features performed the best of all of the models. It had an r2 value of 0.49 which almost doubles the accuracy of the baseline model r2 of 0.26. 
 <img width = "404" height = "243" src="Final Results Table.png"> 
 
 
 ## Key Findings
+**Baseline Model** - I started with an r2 value of 0.26 on the test data using the feature strikeout to predict new_strikeout. This is really poor and I was confident that I could improve upon this.  
+**Single Feature Model** - I tried a few different features and found out that the best single feature model was using k_percent (r2 of 0.36). This is the first time that k_percent really started to stand out and it's a common theme throughout the next few models.  
+**Multi-Feature Model** - I did not improve my model by adding more features. I did notice that models that included k_percent were consistently better than models that did not include it.  
+**Decision Tree Model** - The Decision Tree Model with Full Features was really disappointing. I did not expect those models to be that bad. When I switched to the EDA Features Data the Decision Tree Models improved significantly. The best model was a big improvement from the basic regression models. The Decision Tree Model with a depth of 3 had an r2 value of 0.44. The features and their importance for that model are listed below. Notice that once again k_percent seems to be the most important feature.  
+
+**LASSO EDA Model** - This model was once again an improvement and was my 2nd best overall model with an r2 value of 0.46. This is where things started to get messy and its not surprising because an r2 value of 0.46 is pretty bad. Because each feature is drastically different, I have included a table below with the coefficient for each feature, the mean for each feature, and then a product of the two values.
+
+| Feature | Coefficient | Mean | Product |
+| iz_contact_percent | 2.1803 | 82.53 | 179.9 |
+| k_percent | 3.8944 | 22.74 | 88.6 |
+| whiff_percent | 2.6788 | 24.15 | 64.7 |
+| in_zone_swing_miss | 0.4309 | 149.84 | 64.6 |
+| p_swinging_strike | -0.2369 | 268.04 | -63.5 |
+| strikeout | 0.2768 | 160.2 | 44.3 |
+| xba | -43.4735 | 0.24 | -10.4 |
+
+At face value it looks like k_percent is once again pretty important but the real puzzling thing here is the iz_contact_percent. iz-contact_percent is a pretty narrow stat. The min is 72.6, 25% is 80.3, 50% is 82.5, 75% is 84.95, and max is 91.8. This model looks like it would be a lot better if you got rid of the iz_contact_percent value. I have a table that shows those results below.
+
+| Data Location | LASSO EDA Model Prediction | Target - new_strikeout | Difference | iz_contact_percent value |
+| 1st Quartile | 307.74 | 128 | 179.74 | 175.1 |
+| Median | 331.78 | 154 | 177.78 | 179.87 |
+| 3rd Quartile | 366.04 | 190.5 | 185.22 |
+| Mean | 338.09 | 161.47 | 176.62 | 179.94 |
 
 ## Future Work
 
