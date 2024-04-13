@@ -27,12 +27,17 @@ See Clean_2015_Pitching_Data.csv
 **Step 8** - Scatter Plots with all remaining Features vs Target Feature  
 
 ## Machine Learning Models
+### **Initial Model** Using Strikeouts to Predict New Strikeouts
+Model Performance
+| Feature   | Training   | Test    |
+| -----     | -----      | -----   |
+| strikeout | 0.38 | 0.25 |
+
 ### **Model 1** - Single Feature Model with EDA Features  
 Model Performance
 | Feature   | Training   | Test    |
 | -----     | -----      | -----   |
 | k_percent | 0.42 | 0.36 |
-| strikeout | 0.38 | 0.25 |
 | whiff_percent | 0.30 | 0.32 |
 | p_swinging_strike | 0.31 | 0.25 |
 | xba | 0.30 | 0.27 |
@@ -93,6 +98,7 @@ Model Performance
 | 100   | 1556 | .3635 |
 
 ## Results and Key Findings
+
 
 ## Conclusion and Future Work
 
