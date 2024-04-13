@@ -140,7 +140,10 @@ Because each feature is drastically different, I have also included a table belo
 | strikeout | 0.2768 | 160.2 | 44.3 |
 | xba | -43.4735 | 0.24 | -10.4 |
 
-At face value it looks like k_percent is once again pretty important but the real puzzling thing here is the iz_contact_percent. It has not been a feature that has been very important until this model. I found it interesting that the bias is -177.54. This was very similar to the iz_contact_percent value so I tried cutting iz_contact_percent out and creating a new LASSO model but it performed slightly worse with an r2 value of 0.44
+At face value it looks like k_percent is once again pretty important but the real puzzling thing here is the iz_contact_percent. It has not been a feature that has been very important until this model. I found it interesting that the bias is -177.54. This was very similar to the iz_contact_percent value so I tried cutting iz_contact_percent out and creating a new LASSO model but it performed slightly worse with an r2 value of 0.44.  
+
+**LASSO Full Features Model** - This model was the best model that I created with an r2 value of 0.49.   
+<img width = "461" height = "310" src="LASSO EDA Model.png"> 
 
 
 
