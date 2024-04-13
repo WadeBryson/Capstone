@@ -74,7 +74,8 @@ Model Performance
 | 3     | 2138 | .13 |
 | 2     | 1591 | .35 |
 | 1     | 1783 | .27 |
-### **Model 4** - Decision Tree Model with EDA Features
+### **Model 4** - Decision Tree Model with EDA Features  
+<img width = "454" height = "318" src="Decision Tree EDA Model.png">  
 Model Performance
 | Depth | MSE   | R2    |
 | ----- | ----- | ----- |
@@ -83,7 +84,9 @@ Model Performance
 | 3     | 1365 | .44 |
 | 2     | 1591 | .35 |
 | 1     | 1783 | .27 |
+
 ### **Model 5** - LASSO Model with Full Features
+
 Model Performance
 | Alpha | MSE   | R2    |
 | ----- | ----- | ----- |
