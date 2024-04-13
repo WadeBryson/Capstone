@@ -36,6 +36,8 @@ Model Performance
 | strikeout | 0.38 | 0.25 |  
 
 ### **Model 1** - Single Feature Model with EDA Features  
+<img width = "335" height = "250" src="k_percent Model.png">  
+
 Model Performance
 | Feature   | Training   | Test    |
 | -----     | -----      | -----   |
@@ -47,6 +49,8 @@ Model Performance
 | iz_contact_percent | 0.27 | 0.29 |
 | in_zone_swing_miss | 0.30 | 0.23 |
 ### **Model 2** - Multi Feature Model with EDA Features  
+
+
 Model Performance
 | # Features | Features | Training   | Test    |
 | -----     | -----      | -----   | ----- |
