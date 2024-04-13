@@ -27,7 +27,8 @@ See Clean_2015_Pitching_Data.csv
 **Step 8** - Scatter Plots with all remaining Features vs Target Feature  
 
 ## Machine Learning Models
-### **Initial Model** Using Strikeouts to Predict New Strikeouts
+### **Baseline Model** Using Strikeouts to Predict New Strikeouts
+![Strikeout Model]("C:\Users\wadej\Documents\Capstone\Images\Strikeout Model.png")
 Model Performance
 | Feature   | Training   | Test    |
 | -----     | -----      | -----   |
