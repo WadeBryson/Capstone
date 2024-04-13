@@ -142,7 +142,7 @@ At face value it looks like k_percent is once again pretty important but the rea
 | ------------- | -------------------------- | ---------------------- | ---------- | ------------------------ |
 | 1st Quartile | 307.74 | 128 | 179.74 | 175.1 |
 | Median | 331.78 | 154 | 177.78 | 179.87 |
-| 3rd Quartile | 366.04 | 190.5 | 185.22 |
+| 3rd Quartile | 366.04 | 190.5 | 175.54 | 185.22 |
 | Mean | 338.09 | 161.47 | 176.62 | 179.94 |
 
 ## Future Work
