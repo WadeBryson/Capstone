@@ -28,7 +28,6 @@ See Clean_2015_Pitching_Data.csv
 
 ## Machine Learning Models
 ### **Initial Model** Using Strikeouts to Predict New Strikeouts
-![Strikeout Model](Strikeout Model.png)
 Model Performance
 | Feature   | Training   | Test    |
 | -----     | -----      | -----   |
