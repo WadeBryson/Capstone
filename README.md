@@ -86,7 +86,7 @@ Model Performance
 | 1     | 1783 | .27 |
 
 ### **Model 5** - LASSO Model with Full Features
-
+<img width = "477" height = "297" src="LASSO Full Model.png">  
 Model Performance
 | Alpha | MSE   | R2    |
 | ----- | ----- | ----- |
@@ -97,7 +97,9 @@ Model Performance
 | 10    | 1255 | .4865 |
 | 11    | 1254 | .4871 |
 | 100   | 1293 | .4713 |
+
 ### **Model 6** - LASSO Model with EDA Features
+<img width = "461" height = "310" src="LASSO EDA Model.png">  
 Model Performance
 | Alpha | MSE   | R2    |
 | ----- | ----- | ----- |
