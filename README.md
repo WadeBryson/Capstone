@@ -49,7 +49,7 @@ Model Performance
 | iz_contact_percent | 0.27 | 0.29 |
 | in_zone_swing_miss | 0.30 | 0.23 |
 ### **Model 2** - Multi Feature Model with EDA Features  
-
+<img width = "454" height = "230" src="Multi-Feature Regression Model.png">  
 
 Model Performance
 | # Features | Features | Training   | Test    |
@@ -64,6 +64,8 @@ Model Performance
 | 4 | k_percent, strikeout, xba, whiff_percent | 0.45 | 0.34 |
 | 5 | k_percent, strikeout, xba, whiff_percent, p_swinging_strike | 0.45 | 0.34 |
 ### **Model 3** - Decision Tree Model with Full Features
+
+
 Model Performance
 | Depth | MSE   | R2    |
 | ----- | ----- | ----- |
