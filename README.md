@@ -131,12 +131,13 @@ Because each feature is drastically different, I have also included a table belo
 
 | Feature | Coefficient | Mean | Product |
 | ------- | ----------- | ---- | ------- |
-| iz_contact_percent | 2.1803 | 82.53 | 179.9 |
-| k_percent | 3.8944 | 22.74 | 88.6 |
-| whiff_percent | 2.6788 | 24.15 | 64.7 |
-| in_zone_swing_miss | 0.4309 | 149.84 | 64.6 |
-| p_swinging_strike | -0.2369 | 268.04 | -63.5 |
-| strikeout | 0.2768 | 160.2 | 44.3 |
+| iz_contact_percent | 2.1633 | 82.53 | 178.5 |
+| k_percent | 3.9161 | 22.74 | 89.1 |
+| in_zone_swing_miss | 0.4298 | 149.84 | 64.4 |
+| whiff_percent | 2.6653 | 24.15 | 64.4 |
+| p_swinging_strike | -0.2364 | 268.04 | -63.4 |
+| strikeout | 0.2771 | 160.2 | 44.4 |
+| z_swing_miss_percent | -1.7962 | 16.71 | -30.0 |
 | xba | -43.4735 | 0.24 | -10.4 |
 
 At face value it looks like k_percent is once again pretty important but the real puzzling thing here is the iz_contact_percent. It has not been a feature that has been very important until this model. I found it interesting that the bias is -177.54. This was very similar to the iz_contact_percent value so I tried cutting iz_contact_percent out and creating a new LASSO model but it performed slightly worse with an r2 value of 0.44.  
