@@ -26,7 +26,7 @@ The idea for this project originated when I was trying to utilize Machine Learni
 **Step 8** - Scatter Plots with all remaining Features vs Target Feature  
 
 ## Machine Learning Models
-### **Initial Model** Using Strikeouts to Predict New Strikeouts
+### **Baseline Model** Using Strikeouts to Predict New Strikeouts
 <img width = "341" height = "250" src="Strikeout Model.png">  
 
 Model Performance  
