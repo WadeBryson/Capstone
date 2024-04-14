@@ -35,7 +35,7 @@ Model Performance
 | strikeout | 0.38 | 0.25 |  
 
 ### **Model 1** - Single Feature Model with EDA Features  
-<img width = "335" height = "250" src="k_percent Model.png">  
+<img width = "335" height = "250" src="images\k_percent Model.png">  
 
 Model Performance
 | Feature   | Training   | Test    |
@@ -48,7 +48,7 @@ Model Performance
 | iz_contact_percent | 0.27 | 0.29 |
 | in_zone_swing_miss | 0.30 | 0.23 |
 ### **Model 2** - Multi Feature Model with EDA Features  
-<img width = "454" height = "230" src="Multi-Feature Regression Model.png">  
+<img width = "454" height = "230" src="images\Multi-Feature Regression Model.png">  
 
 Model Performance
 | # Features | Features | Training   | Test    |
@@ -63,7 +63,7 @@ Model Performance
 | 4 | k_percent, strikeout, xba, whiff_percent | 0.45 | 0.34 |
 | 5 | k_percent, strikeout, xba, whiff_percent, p_swinging_strike | 0.45 | 0.34 |
 ### **Model 3** - Decision Tree Model with Full Features
-<img width = "463" height = "327" src="Decision Tree Full Model.png">  
+<img width = "463" height = "327" src="images\Decision Tree Full Model.png">  
 
 Model Performance
 | Depth | MSE   | R2    |
@@ -74,7 +74,7 @@ Model Performance
 | 2     | 1591 | .35 |
 | 1     | 1783 | .27 |
 ### **Model 4** - Decision Tree Model with EDA Features  
-<img width = "454" height = "318" src="Decision Tree EDA Model.png">  
+<img width = "454" height = "318" src="images\Decision Tree EDA Model.png">  
 
 Model Performance
 | Depth | MSE   | R2    |
@@ -86,7 +86,7 @@ Model Performance
 | 1     | 1783 | .27 |
 
 ### **Model 5** - LASSO Model with Full Features
-<img width = "477" height = "297" src="LASSO Full Model.png">  
+<img width = "477" height = "297" src="images\LASSO Full Model.png">  
 
 Model Performance
 | Alpha | MSE   | R2    |
@@ -100,7 +100,7 @@ Model Performance
 | 100   | 1293 | .4713 |
 
 ### **Model 6** - LASSO Model with EDA Features
-<img width = "461" height = "310" src="LASSO EDA Model.png">  
+<img width = "461" height = "310" src="images\LASSO EDA Model.png">  
 
 Model Performance
 | Alpha | MSE   | R2    |
@@ -114,7 +114,7 @@ Model Performance
 
 ## Compiled Model Performances
 The LASSO Model with Full Features performed the best of all of the models. It had an r2 value of 0.49 which almost doubles the accuracy of the baseline model r2 of 0.26.  
-<img width = "404" height = "243" src="Final Results Table.png">  
+<img width = "404" height = "243" src="images\Final Results Table.png">  
 
 
 ## Key Findings  
@@ -122,10 +122,10 @@ The LASSO Model with Full Features performed the best of all of the models. It h
 **Single Feature Model** - I tried a few different features and found out that the best single feature model was using k_percent (r2 of 0.36). This is the first time that k_percent really started to stand out and it's a common theme throughout the next few models.  
 **Multi-Feature Model** - I did not improve my model by adding more features. I did notice that models that included k_percent were consistently better than models that did not include it.  
 **Decision Tree Model** - The Decision Tree Model with Full Features was really disappointing. I did not expect those models to be that bad. When I switched to the EDA Features Data the Decision Tree Models improved significantly. The best model was a big improvement from the basic regression models. The Decision Tree Model with a depth of 3 had an r2 value of 0.44. The features and their importance for that model are listed below. Notice that once again k_percent seems to be the most important feature.  
-<img width = "561" height = "250" src="Decision Tree EDA Features.png">  
+<img width = "561" height = "250" src="images\Decision Tree EDA Features.png">  
 
 **LASSO EDA Model** - This model was once again an improvement and was my 2nd best overall model with an r2 value of 0.46. This is where things started to get messy and its not surprising because an r2 value of 0.46 is pretty bad.  
-<img width = "590" height = "286" src="LASSO EDA Features.png"> 
+<img width = "590" height = "286" src="images\LASSO EDA Features.png"> 
 
 Because each feature is drastically different, I have also included a table below with the coefficient for each feature, the mean for each feature, and then a product of the two values so you can see a snapshot of the average impact of each feature on the data.
 
@@ -142,7 +142,7 @@ Because each feature is drastically different, I have also included a table belo
 At face value it looks like k_percent is once again pretty important but the real puzzling thing here is the iz_contact_percent. It has not been a feature that has been very important until this model. I found it interesting that the bias is -177.54. This was very similar to the iz_contact_percent value so I tried cutting iz_contact_percent out and creating a new LASSO model but it performed slightly worse with an r2 value of 0.44.  
 
 **LASSO Full Features Model** - This model was the best model that I created with an r2 value of 0.49.   
-<img width = "333" height = "416" src="LASSO Full Features.png">  
+<img width = "333" height = "416" src="images\LASSO Full Features.png">  
 
 Once again the features and their coefficients can be a little misleading so I created a table below with the coefficient for each feature, the mean for each feature, and then a product of the two values so you can see a snapshot of the average impact of each feature on the data.  
 
