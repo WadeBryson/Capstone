@@ -8,11 +8,10 @@ The idea for this project originated when I was trying to utilize Machine Learni
 
 ## Creation of Dataset
 **Data** - All data used was downloaded from the Baseball Savant Website (https://baseballsavant.mlb.com/). See Raw_Data.csv.  
-Creating of CSV with Target Variables - In order to use last season's data to predict the current season's target feature I had to do a lot of manipulation and combining of data records.  
+**Creating of CSV with Target Variables** - In order to use last season's data to predict the current season's target feature I had to do a lot of manipulation and combining of data records.  
 **Step 1** - I began by only downloading a pitcher's data if they pitched the minimum innings required to qualify for the ERA title in 2023 and 2022.  
 **Step 2** - I kept all the features for their prior season (2022) and then added their 2023 target features (strikeouts) to their record.  
 **Step 3** - I repeated this process for 2015-2016, 2016-2017, 2017-2018, 2018-2019, and 2021-2022.  
-See Clean_2015_Pitching_Data.csv  
 
 ## Exploratory Data Analysis
 **Step 1** - Import the Data  
@@ -27,7 +26,7 @@ See Clean_2015_Pitching_Data.csv
 **Step 8** - Scatter Plots with all remaining Features vs Target Feature  
 
 ## Machine Learning Models
-### **Initial Model** Using Strikeouts to Predict New Strikeouts
+### **Baseline Model** Using Strikeouts to Predict New Strikeouts
 <img width = "341" height = "250" src="Strikeout Model.png">  
 
 Model Performance  
@@ -143,14 +142,53 @@ Because each feature is drastically different, I have also included a table belo
 At face value it looks like k_percent is once again pretty important but the real puzzling thing here is the iz_contact_percent. It has not been a feature that has been very important until this model. I found it interesting that the bias is -177.54. This was very similar to the iz_contact_percent value so I tried cutting iz_contact_percent out and creating a new LASSO model but it performed slightly worse with an r2 value of 0.44.  
 
 **LASSO Full Features Model** - This model was the best model that I created with an r2 value of 0.49.   
-<img width = "461" height = "310" src="LASSO EDA Model.png"> 
+<img width = "333" height = "416" src="LASSO Full Features.png">  
 
+Once again the features and their coefficients can be a little misleading so I created a table below with the coefficient for each feature, the mean for each feature, and then a product of the two values so you can see a snapshot of the average impact of each feature on the data.  
 
+| Feature | Coefficient | Mean | Product |
+| ------- | ----------- | ---- | ------- |
+| p_total_strike | -0.1111 | 1757.68 | -195.1 | 
+| strikeout | 0.9183 | 160.2 | 147.1 |
+| fastball_avg_spin | 0.0652 | 2222.82 | 144.9 |
+| total_pitches | 0.04 | 2711.33 | 108.5 |
+| p_total_ball | -0.1030 | 962.42 | -99.1 |
+| p_ball | 0.1061 | 894.9 | 95.0 |
+| pa | -0.1203 | 703.45 | -84.63 |
+| in_zone | 0.0499 | 1330.5 | 66.4 |
+| out_zone | -0.0254 | 1385.15 | -35.2 |
+| p_lob | 0.2969 | 116.67 | 34.6 |
+| player_age | -0.8347 | 28.56 | -23.8 |
+| p_total_bases | -0.0764 | 253.88 | -19.4 |
+| out_zone_swing | 0.0468 | 405.3 | 19.0 |
+| offspeed_avg_spin | -0.0096 | 1723.9 | -16.5 |
+| last_year_Yahoo | -0.0483 | 328.28 | -15.9 |
+| p_total_swinging_strike | 0.0122 | 760.99 | 9.3 |
+| double | 0.2483 | 30.81 | 7.7 |
+| pitch_count_fastball | 0.0047 | 1621.4 | 7.6 |
+| p_swinging_strikes | -0.0256 | 268.04 | -6.9 |
+| p_called_strike | -0.0096 | 464.1 | -4.5 |
+| pitch_count_breaking | 0.0056 | 693.5 | 3.9 |
+| breaking_avg_spin | 0.0013 | 2384.4 | 3.1 |
+| edge | 0.0014 | 1174 | 1.6 |
+| ab | -0.0013 | 639.4 | -0.8 |
+| pitch_count_offspeed | 0.0002 | 366.2 | 0.1 | 
+
+These features and their weight seem drastically different than everything else that I used. p_total_strike, fastball_avg_spin, total_pitches all show up heavily in this model but they did not show up in any of my other models. A big reason for this was because they were not on the original correlation analysis done in the EDA. p_total_ball and p_ball are very similar features and they show up as the 5th and 6th heaviest features but they have opposite coefficients so they kind of cancel each other out so their impact on this model is not a big as it originally looked. The big surprise here is that the feature strikeout is high on the list and k_percent was not used in this model.  
+
+## Conclusion  
+The goal of this project was to utilize Machine Learning to predict the season long strikeout total for a Major League Baseball pitcher using basic and advanced statistics from the Baseball Savant website. The baseline model I began with utilized a pitcher's previous year strikeouts to predict their next year's strikeouts and that model had a r2 value of 0.26. The best model that I was able to create was a LASSO Model that utilized my full data set and focused on features like a pitcher's total strikes, strikeouts, fastball average spin rate, and total pitches and this model had a r2 value of 0.49. I created several models that performed very similar and in almost every model the most important feature was strikeout percentage.
 
 ## Future Work
+Instead of trying to predict the exact number of strikeouts I think someone could have more success creating a tier system and trying to predict which tier a pitcher will end up in. For example you could potentially break the tiers into the following: Tier 1 - 200+ Strikeouts, Tier 2 - 150-199 Strikeouts, Tier 3 - 100-149 Strikeouts, Tier 4 - 0-99 Strikeouts. I wanted to create this pitcher strikeout model to have a leg up in Fantasy Baseball and for that purpose I am more concerned about getting pitchers with 200+ strikeout potential than I am predicting their exact strikeout number. A tier system might help allow for more error and therefore get a better predictive model.
 
 ## Project Requirements
-
+pandas  
+numpy  
+seaborn  
+ipykernel  
+matplotlib.pyplot  
+scikit-learn  
 
 ## File Descriptions
 **Raw_Data.csv** - Raw Pitching Data from 2015 - 2023 (No data for 2020 due to shortened COVID season).    
