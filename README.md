@@ -183,12 +183,12 @@ The goal of this project was to utilize Machine Learning to predict the season l
 Instead of trying to predict the exact number of strikeouts I think someone could have more success creating a tier system and trying to predict which tier a pitcher will end up in. For example you could potentially break the tiers into the following: Tier 1 - 200+ Strikeouts, Tier 2 - 150-199 Strikeouts, Tier 3 - 100-149 Strikeouts, Tier 4 - 0-99 Strikeouts. I wanted to create this pitcher strikeout model to have a leg up in Fantasy Baseball and for that purpose I am more concerned about getting pitchers with 200+ strikeout potential than I am predicting their exact strikeout number. A tier system might help allow for more error and therefore get a better predictive model.
 
 ## Project Requirements
-pandas
-numpy
-seaborn
-ipykernel
-matplotlib.pyplot
-scikit-learn
+pandas  
+numpy  
+seaborn  
+ipykernel  
+matplotlib.pyplot  
+scikit-learn  
 
 ## File Descriptions
 **Raw_Data.csv** - Raw Pitching Data from 2015 - 2023 (No data for 2020 due to shortened COVID season).    
