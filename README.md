@@ -8,11 +8,10 @@ The idea for this project originated when I was trying to utilize Machine Learni
 
 ## Creation of Dataset
 **Data** - All data used was downloaded from the Baseball Savant Website (https://baseballsavant.mlb.com/). See Raw_Data.csv.  
-Creating of CSV with Target Variables - In order to use last season's data to predict the current season's target feature I had to do a lot of manipulation and combining of data records.  
+**Creating of CSV with Target Variables** - In order to use last season's data to predict the current season's target feature I had to do a lot of manipulation and combining of data records.  
 **Step 1** - I began by only downloading a pitcher's data if they pitched the minimum innings required to qualify for the ERA title in 2023 and 2022.  
 **Step 2** - I kept all the features for their prior season (2022) and then added their 2023 target features (strikeouts) to their record.  
 **Step 3** - I repeated this process for 2015-2016, 2016-2017, 2017-2018, 2018-2019, and 2021-2022.  
-See Clean_2015_Pitching_Data.csv  
 
 ## Exploratory Data Analysis
 **Step 1** - Import the Data  
