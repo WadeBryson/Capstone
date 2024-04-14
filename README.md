@@ -27,7 +27,7 @@ The idea for this project originated when I was trying to utilize Machine Learni
 
 ## Machine Learning Models
 ### **Baseline Model** Using Strikeouts to Predict New Strikeouts
-<img width = "341" height = "250" src="Strikeout Model.png">  
+<img width = "341" height = "250" src="images\Strikeout Model.png">  
 
 Model Performance  
 | Feature   | Training   | Test    |  
